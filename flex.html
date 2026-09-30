@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+
+<body>
+
+    <h2 align="center">Application Form</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>A. General Information</legend>
+
+            <label>Proposed Insured's Full Name *</label>
+            <input type="text" name="fullname">
+
+            <label>Birth Date *</label>
+            <input type="date" name="birthdate">
+
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+
+            <br><br>
+
+            <label>Address *</label><br>
+            <textarea name="address" rows="3" cols="50"></textarea>
+
+            <br><br>
+
+            <label>Phone Number *</label>
+            <input type="tel" name="phone">
+
+            <label>Email Address *</label>
+            <input type="email" name="email">
+
+            <br><br>
+
+            <label>ID CNIC Number *</label>
+            <input type="text" name="cnic">
+
+            <label>Social Security / Reference Number</label>
+            <input type="text" name="reference">
+
+            <br><br>
+
+            <label>Marital Status *</label>
+            <select name="marital_status">
+                <option>Select status</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+            </select>
+
+            <label>Occupation *</label>
+            <input type="text" name="occupation">
+
+            <br><br>
+
+            <label>Are you retired?</label>
+            <input type="radio" name="retired" value="yes"> Yes
+            <input type="radio" name="retired" value="no"> No
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>B. Type of Health Coverage</legend>
+
+            <h4>Employee Coverage</h4>
+
+            <input type="radio" name="employee" value="yes"> Yes
+            <input type="radio" name="employee" value="no"> No
+
+            <br>
+
+            <label>Employee Plan Choice</label>
+            <select name="employee_plan">
+                <option>Select plan</option>
+                <option>Basic Plan</option>
+                <option>Standard Plan</option>
+                <option>Premium Plan</option>
+            </select>
+
+            <br><br>
+
+            <h4>Spouse Coverage</h4>
+
+            <input type="radio" name="spouse" value="yes"> Yes
+            <input type="radio" name="spouse" value="no"> No
+
+            <br>
+
+            <label>Spouse Plan Choice</label>
+            <select name="spouse_plan">
+                <option>Select plan</option>
+                <option>Basic Plan</option>
+                <option>Standard Plan</option>
+                <option>Premium Plan</option>
+            </select>
+
+            <br><br>
+
+            <h4>Children Coverage</h4>
+
+            <input type="radio" name="children" value="yes"> Yes
+            <input type="radio" name="children" value="no"> No
+
+            <br>
+
+            <label>Children Plan Choice</label>
+            <select name="children_plan">
+                <option>Select plan</option>
+                <option>Basic Plan</option>
+                <option>Standard Plan</option>
+                <option>Premium Plan</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>C. Spouse / Children Information</legend>
+
+            <label>Dependent Name</label>
+            <input type="text" name="dependent_name">
+
+            <label>ID / SSN</label>
+            <input type="text" name="dependent_id">
+
+            <br><br>
+
+            <label>Relationship</label>
+            <select name="relationship">
+                <option>Spouse</option>
+                <option>Son</option>
+                <option>Daughter</option>
+                <option>Other</option>
+            </select>
+
+            <label>Birth Date</label>
+            <input type="date" name="dependent_birthdate">
+
+            <br><br>
+
+            <label>Age</label>
+            <input type="number" name="age">
+
+            <label>Gender</label>
+            <select name="dependent_gender">
+                <option>Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>D. Plan Information</legend>
+
+            <label>Units</label>
+            <input type="number" name="units">
+
+            <label>Annual Premium</label>
+            <input type="number" name="premium">
+
+            <br><br>
+
+            <label>Payment Mode *</label>
+            <select name="payment_mode">
+                <option>Select payment mode</option>
+                <option>Monthly</option>
+                <option>Quarterly</option>
+                <option>Half Yearly</option>
+                <option>Yearly</option>
+            </select>
+
+            <br><br>
+
+            <label>Cash With Application</label>
+            <input type="number" name="cash">
+
+            <label>Planned Monthly Premium</label>
+            <input type="number" name="monthly_premium">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>E. Required Documents</legend>
+
+            <p>
+                Please attach any supporting documents when submitting the application.
+            </p>
+
+            <label>Attach Documents:</label>
+            <input type="file" name="documents">
+
+            <br><br>
+
+            <small>
+                Accepted formats: PDF, JPG, PNG, DOC
+            </small>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>F. Declaration</legend>
+
+            <input type="checkbox" name="declaration">
+
+            <label>
+                I confirm that the information provided in this application
+                is complete and accurate.
+            </label>
+
+            <br><br>
+
+            <label>Applicant Full Name / Signature *</label>
+            <input type="text" name="signature">
+
+            <label>Application Date *</label>
+            <input type="date" name="application_date">
+
+        </fieldset>
+
+        <br>
+
+        <div align="right">
+            <input type="reset" value="Clear Form">
+            <input type="submit" value="Submit Application">
+        </div>
+
+    </form>
+
+</body>
+</html>
